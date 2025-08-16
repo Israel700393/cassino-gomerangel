@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Cassino-GomesRangel</title>
+    <link rel="stylesheet" href="sty.css" />
+    <script src="jva.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🎰 Cassino - GomesRangel</h1>
+      <div class="top-stats">
+        <div class="stat"><div class="label">Saldo</div><div id="balance" class="value">R$ 1000</div></div>
+        <div class="stat"><div class="label">Aposta</div><div id="betValue" class="value">R$ 10</div></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="slot-wrap" id="slot">
+        <div class="reel" id="reel1"><div class="strip" id="strip1"></div><div class="window"></div></div>
+        <div class="reel" id="reel2"><div class="strip" id="strip2"></div><div class="window"></div></div>
+        <div class="reel" id="reel3"><div class="strip" id="strip3"></div><div class="window"></div></div>
+      </div>
+
+      <div class="controls">
+        <div class="left-controls">
+          <label>Aposta: <input id="bet" type="number" min="1" step="1" value="10"></label>
+          <button id="spinBtn" class="btn spin">Girar</button>
+          <button id="autoBtn" class="btn">Auto</button>
+        </div>
+        <div>
+          <button id="resetBtn" class="btn">Reset Saldo</button>
+        </div>
+      </div>
+
+      <div class="paytable" id="paytable">
+        <div class="pay">🍒🍒🍒 = 5×</div>
+        <div class="pay">🍋🍋🍋 = 3×</div>
+        <div class="pay">🔔🔔🔔 = 10×</div>
+        <div class="pay">⭐️⭐️⭐️ = 20× (JACKPOT)</div>
+        <div class="pay">Qualquer 2 iguais = 1.5×</div>
+      </div>
+
+      <div id="message" style="margin-top:12px;color:var(--muted)"></div>
+
+    </main>
+
+    <footer>&copy;cassino GomesRangel, todos direitos reservados.</footer>
+</div>
+</body>
+</html>
